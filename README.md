@@ -28,7 +28,7 @@ Frontend - Angular CLI 16.0.0, HTML, CSS.
 1. Clone the repository to your local machine.
 2. Create a MySQL database and make a table named 'compounds' with query -
    `CREATE TABLE compounds (id INT, compoundName TEXT, compoundDescription TEXT, imageSource TEXT, imageAttribution TEXT, dateModified DATE); `
-3. Update the "dgconfig.js" file in /backend_node/configs and also upload the csv file to the created table.
+3. Update the `dgconfig.js` file in `/backend_node/configs` and also upload the csv file to the created table.
 4. Navigate to the `backend_node` directory and run `npm install` to install ExpressJS and Sequelize dependencies.
 5. Navigate to the `frontend` directory and run `npm install` to install Angular dependencies.
 6. Start the Express server using `nodemon server.js` and Angular app using the script `npm start`.
