@@ -1,0 +1,32 @@
+.example-card {
+  max-width: 400px;
+  margin-bottom: 8px;
+}
+
+.detail{
+  padding-top: 7%;
+  display: grid;
+}
+
+.center{
+  font-family: andale mono, monospace;
+  text-align: center;
+}
+
+.description{
+  margin: 0 20%;
+}
+
+img{
+  height: 30vh;
+  width: 30vh;
+}
+
+#compoundName {
+  font-size: 50px;
+  margin-bottom: 5vh;
+}
+
+#compoundImage{
+  margin-bottom: 3vh;
+}

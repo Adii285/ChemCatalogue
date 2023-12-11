@@ -1,0 +1,56 @@
+<body style="background-color: #F0ECE5; width: 423px; height: 540px;">
+  <h1 mat-dialog-title style="color: #161A30">Add Compound</h1>
+  
+  <div mat-dialog-content class="cm-content">
+    <form style="display: grid">
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Compound Name</mat-label>
+        <input
+          formControlName="compoundName"
+          matInput
+          placeholder="Compound Name"
+        />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Compound description</mat-label>
+        <textarea
+          style="height: 100px"
+          formControlName="compoundDescription"
+          matInput
+          placeholder="Compound Description"
+        ></textarea>
+      </mat-form-field>
+      
+      <mat-form-field appearance="outline">
+        <mat-label>Compound Image</mat-label>
+        <input
+          formControlName="compoundDescription"
+          matInput
+          placeholder="Image link"
+        >
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Image Attribution</mat-label>
+        <input
+          formControlName="compoundDescription"
+          matInput
+          placeholder="Attribution link"
+        >
+      </mat-form-field>
+    
+    </form>
+  </div>
+  
+  <div mat-dialog-actions class="buttons" style="display: flex; justify-content: space-between">
+    <button style="margin-left: 18px; " mat-raised-button color="primary">
+      Add
+    </button>
+    <button style="margin-right: 18px;" mat-raised-button color="warn" mat-dialog-close>
+      Cancel
+    </button>
+  </div>
+
+</body>

@@ -1,0 +1,40 @@
+<mat-toolbar color="primary" class="navbar">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+    routerLink=""
+    #tooltip="matTooltip"
+    matTooltip="Home"
+    style="background: url('https://api.iconify.design/simple-line-icons/chemistry.svg?color=%23dbb13c&width=40&height=40') no-repeat center center;"
+  >
+  </button>
+
+  <span style ="margin-left: 5px; margin-right: 50px; color: #38F2AE;">NuvertOS</span>
+  
+  <span class="typewriter" routerLink="">Welcome to the Compounds Directory!</span>
+
+  <span class="example-spacer"></span>
+  
+  <button
+    class="btn"
+    mat-icon-button
+    color="basic"
+    #tooltip="matTooltip"
+    matTooltip="Add a compound"
+    (click)="openUploadDialog($event)"
+    style="margin-right: 2vw;"
+  >
+    <mat-icon>add</mat-icon>
+  </button>
+  <button mat-icon-button 
+    class="btn1" 
+    #tooltip="matTooltip" 
+    matTooltip="Aditya Agarwal" 
+    onclick="window.open('https://github.com/Adii285', '_blank');"
+    style="background: url('https://api.iconify.design/mdi/github.svg?width=30&height=30') no-repeat center center; filter: invert(100%);"
+  >  
+  </button>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

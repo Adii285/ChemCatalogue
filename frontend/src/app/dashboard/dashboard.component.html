@@ -1,0 +1,60 @@
+<body style="background-color: #F0ECE5; height: auto">
+  
+  <div class="cm-container">
+    
+    <div class="card-list">
+  
+      <div class="card" *ngFor="let compound of compounds">
+        
+        <mat-card [routerLink]="['/compound', compound.id]">
+        
+          <mat-card-header class="cardheader">
+            <mat-card-title style="text-align: center; font-family: andale mono, monospace; font-size: 18px;">{{compound.id}}.   {{ compound.compoundName }}</mat-card-title>
+          </mat-card-header>
+        
+          <img mat-card-image [src]="compound.imageSource" alt="Compound Image" class="cardimage"/>
+        
+          <mat-card-actions class="cardbuttons" style="display: flex; justify-content: space-between">
+        
+            <button
+              class="editbtn"
+              mat-icon-button
+              color="primary"
+              #tooltip="matTooltip"
+              matTooltip="Edit Compound"
+              (click)="openUpdateDialog($event, compound)"
+            >
+              <mat-icon>edit</mat-icon>
+            </button>
+        
+            <button
+              class="deletebtn"
+              mat-icon-button
+              color="warn"
+              #tooltip="matTooltip"
+              matTooltip="Delete Compound"
+              (click)="openDeleteDialog($event, compound)"
+            >
+              <mat-icon>delete</mat-icon>
+            </button>
+        
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+    
+    <div>
+      <mat-paginator style="background-color: #F0ECE5;"
+        [length]="totalRecords"
+        [pageIndex]="pageIndex"
+        [pageSize]="size"
+        [pageSizeOptions]="pageSizeOptions"
+        aria-label="Select page"
+        (page)="handlePageEvent($event)"
+      >
+      </mat-paginator>
+    </div>
+  
+  </div>
+
+</body>

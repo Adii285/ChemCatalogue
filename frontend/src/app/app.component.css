@@ -1,0 +1,55 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.navbar{
+  background-color: #161A30;
+}
+
+.btn{
+  color: #f4efe1;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover{
+  color: #f3d583;
+  box-shadow: 2px 0px 2px 0px #f3d583;
+}
+
+.btn1{  
+  transition: all 0.2s ease-in-out;
+}
+
+.btn1:hover{
+  box-shadow: 2px 0px 2px 0px #f8c947;
+}
+
+.typewriter{
+  color: #F0ECE5;
+  font-size: 22px;
+  font-family: andale mono, monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 4s steps(35)  alternate,
+  blink 800ms steps(3) infinite normal;
+  border-right: 2px solid #F0ECE5;
+} 
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 405px;
+  }
+}
+  
+@keyframes blink {
+  from {
+    border-color: white;
+  }
+  
+  to {
+    border-color: transparent;
+  }
+}

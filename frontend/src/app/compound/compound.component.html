@@ -1,0 +1,36 @@
+<body style="background-color:#F0ECE5">
+  
+  <div class="detail" >
+    
+    <div class="center" >
+      
+      <h1 id="compoundName">
+        
+        <a style="color: inherit; font-family: andale mono, monospace;"
+          target="_blank"
+          [href]="
+            compound && compound.imageAttribution ? compound.imageAttribution : '' "
+          #tooltip="matTooltip"
+          matTooltip="Image Attribution"
+        >
+          {{ compound.compoundName }}
+        </a>
+      
+      </h1>
+    </div>
+    
+    <div class="center">
+      <img id="compoundImage" [src]="compound && compound.imageSource ? compound.imageSource : ''" style="height: 300px; width: 300px;"/>
+    </div>
+    
+    <div class="center description" style="font-size: 20px; line-height: 28px">
+      {{
+        compound && compound.compoundDescription
+          ? compound.compoundDescription
+          : ""
+      }}
+    </div>
+  
+  </div>
+
+</body>
