@@ -36,7 +36,7 @@ Frontend - Angular CLI 16.0.0, HTML, CSS.
 
 There are currently 5 API calls in this app-
 
-1. GET /apii/compound: Retrieve all compounds with pagination.
+1. GET /api/compound: Retrieve all compounds with pagination.
 2. GET /api/compound/:id: Get compound by ID.
 3. POST /api/compound/: Add a new compound.
 4. PUT /api/compound/:id: Update details of a compound with a specific ID.
